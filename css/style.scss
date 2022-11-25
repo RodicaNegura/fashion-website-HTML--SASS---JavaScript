@@ -55,6 +55,25 @@ html {
   }
 }
 
+section {
+  padding: 2rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.9rem 3rem;
+  border-radius: 0.5rem;
+  background: $red;
+  color: #fff;
+  font-size: 1.7rem;
+  cursor: pointer;
+
+  &:hover {
+    background: $black;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -72,6 +91,7 @@ html {
     font-size: 2.5rem;
     color: $black;
     font-weight: bolder;
+
     i {
       color: $red;
     }
@@ -136,6 +156,44 @@ html {
   display: none;
 }
 
+.home {
+  padding: 0;
+  padding-top: 7.6rem;
+
+  .home-slider {
+
+    .slide {
+      min-height: 65vh;
+      display: flex;
+      align-items: center;
+      padding-left: 7%;
+      background-size: cover !important;
+      background-position: center !important;
+
+      .content {
+        span {
+          font-size: 2rem;
+          color: $light-color;
+        }
+
+        h3 {
+          font-size: 5rem;
+          color: $black;
+          padding-top: 0.5rem;
+        }
+      }
+    } 
+  }
+  .swiper-button-next {
+    top: 90%;
+    right: 2rem;
+  }
+  .swiper-button-prev {
+    top: 90%;
+    right: 8rem;
+  }
+}
+
 
 
 
@@ -152,6 +210,10 @@ html {
   }
 
   .header {
+    padding: 2rem;
+  }
+
+  section {
     padding: 2rem;
   }
 }
@@ -189,6 +251,10 @@ html {
     &.active {
       right: 0;
     }
+  }
+
+  .home .home-slider .slide {
+    padding-left: 2rem;
   }
 }
 

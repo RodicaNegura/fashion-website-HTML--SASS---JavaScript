@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Website || Complete Responsive </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
     <link rel="stylesheet" href="/css/style.css">
   </head>
@@ -30,6 +31,39 @@
         <label for="search-box" class="fas fa-search"></label>
       </form>
     </header>
+
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide" style="background:url(/images/banner1.jpg) no-repeat">
+            <div class="content">
+              <span>upto 50% off</span>
+              <h3>women's fashion</h3>
+              <a href="#" class="btn">shop now</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide" style="background:url(/images/banner2.jpg) no-repeat">
+            <div class="content">
+              <span>upto 50% off</span>
+              <h3>men's fashion</h3>
+              <a href="#" class="btn">shop now</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide" style="background:url(/images/banner3.jpg) no-repeat">
+            <div class="content">
+              <span>upto 50% off</span>
+              <h3>kid's fashion</h3>
+              <a href="#" class="btn">shop now</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>
