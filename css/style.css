@@ -154,6 +154,23 @@ section {
 .home .swiper-button-prev {
   top: 90%;
   right: 8rem;
+  left: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  color: #130f40;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #130f40;
+  color: #fff;
 }
 
 @media (max-width: 991px) {
