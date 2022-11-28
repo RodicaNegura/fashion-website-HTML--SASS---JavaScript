@@ -59,6 +59,17 @@ section {
   padding: 2rem 9%;
 }
 
+.heading {
+  font-size: 3.5rem;
+  color: $black;
+  padding-bottom: 2rem;
+  text-align: center;
+
+  span {
+    color: $red;
+  }
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
