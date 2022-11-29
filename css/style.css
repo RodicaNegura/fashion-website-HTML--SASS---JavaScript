@@ -221,6 +221,19 @@ section {
   padding-top: 0.5rem;
 }
 
+@-webkit-keyframes fadeUp {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+}
 .products .filter-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -243,12 +256,19 @@ section {
   justify-content: center;
 }
 .products .box-container .box {
-  flex: 1 1 26rem;
+  width: 26rem;
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+.products .box-container .box.hide {
+  display: none;
+}
+.products .box-container .box.active {
+  -webkit-animation: fadeUp 0.4s linear;
+          animation: fadeUp 0.4s linear;
 }
 .products .box-container .box .icons {
   display: flex;
@@ -261,6 +281,7 @@ section {
   top: 0;
   left: 0;
   gap: 0.5rem;
+  transform: scale(0);
   z-index: 1;
 }
 .products .box-container .box .icons a {
@@ -271,6 +292,9 @@ section {
   text-align: center;
   background: #fff;
   border-radius: 0.5rem;
+}
+.products .box-container .box:hover .icons {
+  transform: scale(1);
 }
 .products .box-container .box .image {
   height: 35rem;
@@ -322,6 +346,37 @@ section {
 }
 .products .box-container .box .content .stars span {
   color: #666;
+}
+
+.deal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  background: linear-gradient(#fff 20%, #f9f9f9 20.1%);
+  justify-content: center;
+}
+.deal .image {
+  flex: 1 1 42rem;
+}
+.deal .image img {
+  width: 40rem;
+}
+.deal .content {
+  flex: 1 1 42rem;
+}
+.deal .content span {
+  color: #eb4d4b;
+  font-size: 1.7rem;
+}
+.deal .content h3 {
+  color: #130f40;
+  font-size: 3rem;
+  padding: 0.5rem 0;
+}
+.deal .content p {
+  color: #666;
+  font-size: 2rem;
 }
 
 @media (max-width: 991px) {
@@ -382,5 +437,15 @@ section {
   }
   .banner-container .banner .content h3 {
     font-size: 2rem;
+  }
+  .products .box-container .box {
+    width: 100%;
+  }
+  .deal .image img {
+    width: 100%;
+  }
+  .deal .content {
+    padding-top: 2rem;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
