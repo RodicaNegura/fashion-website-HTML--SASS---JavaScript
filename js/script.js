@@ -81,3 +81,21 @@ var swiper = new Swiper(".featured-slider", {
     }
   },
 })
+
+var swiper = new Swiper(".review-slide", {
+  centeredSlides: true,
+  loop: true,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 9500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+  },
+})
